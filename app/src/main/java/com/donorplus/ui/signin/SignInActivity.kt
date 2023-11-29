@@ -13,6 +13,7 @@ import com.google.firebase.FirebaseApp
 import com.google.firebase.auth.FirebaseAuth
 
 class SignInActivity : AppCompatActivity() {
+
     private lateinit var binding: ActivitySignInBinding
     private lateinit var auth: FirebaseAuth
 

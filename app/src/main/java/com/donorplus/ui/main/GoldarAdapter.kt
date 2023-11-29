@@ -21,6 +21,7 @@ class GoldarAdapter(private val darah: ArrayList<DataDarah>): RecyclerView.Adapt
             binding.apply {
                 tvItemExp.text = "Expired Sebelum ${currentItem.expiredDate}"
                 tvItemGolonganDarah.text = currentItem.tipeDarah
+                tvItemLocation.text = currentItem.location
             }
         }
     }

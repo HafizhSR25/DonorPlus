@@ -68,7 +68,6 @@ class DonorDarahActivity : AppCompatActivity() {
 
     private fun pushData(dataDarah: DataDarah) {
         auth = FirebaseAuth.getInstance()
-
         db = FirebaseDatabase
             .getInstance()
             .getReference("Data_Darah")
