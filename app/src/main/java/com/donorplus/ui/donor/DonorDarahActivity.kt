@@ -58,7 +58,7 @@ class DonorDarahActivity : AppCompatActivity() {
                 val location = spLocation.selectedItem.toString()
                 val id = db.database.getReference("Data_Darah").push().key.toString()
 
-                val dataDarah = DataDarah(id,tipeDarah, formatDate,location )
+                val dataDarah = DataDarah(id,tipeDarah, formatDate,location, true )
 
                 pushData(dataDarah)
             }
@@ -70,12 +70,12 @@ class DonorDarahActivity : AppCompatActivity() {
         auth = FirebaseAuth.getInstance()
         db = FirebaseDatabase
             .getInstance()
-            .getReference("Data_Darah")
+            .getReference("Data_Darah").child(dataDarah.id)
 
 
-        val dbRef = db.push()
-        dbRef.setValue(dataDarah).addOnCompleteListener{
-            Toast.makeText(this, "Data Darah Berhasil Di Upload",Toast.LENGTH_SHORT).show()
+
+        db.setValue(dataDarah).addOnCompleteListener{
+            Toast.makeText(this, "Kamu Berhasil Donor Darah",Toast.LENGTH_SHORT).show()
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }

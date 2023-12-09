@@ -13,6 +13,12 @@
         android:theme="@style/Theme.Donor"
         tools:targetApi="31">
         <activity
+            android:name=".ui.history.HistoryDonorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.detail.DetailDonorActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.donor.DonorDarahActivity"
             android:exported="false" />
         <activity

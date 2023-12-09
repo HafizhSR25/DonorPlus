@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F4F4F4"
-    tools:context=".ui.main.MainActivity">
+    tools:context=".ui.history.HistoryDonorActivity">
+
 
     <ImageView
         android:id="@+id/imageView2"
@@ -47,19 +47,12 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:fontFamily="@font/montserrat_regular"
-            android:text="Golongan Darah"
+            android:text="Riwayat Darah Yang Kamu Ambil"
             android:textSize="5pt"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="@+id/tv_main_name"
             app:layout_constraintTop_toBottomOf="@+id/tv_main_name" />
 
-        <Spinner
-            android:id="@+id/sp_goldar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="@+id/tv_golongan_darah"
-            app:layout_constraintTop_toBottomOf="@+id/tv_golongan_darah" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.recyclerview.widget.RecyclerView
@@ -70,37 +63,10 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="25dp"
         android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/btn_donor"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/csr_card_main"
         app:layout_constraintStart_toStartOf="@+id/csr_card_main"
         app:layout_constraintTop_toBottomOf="@+id/csr_card_main"
-        tools:listitem="@layout/item_main"/>
-
-    <Button
-        android:id="@+id/btn_donor"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginBottom="8dp"
-        android:backgroundTint="@color/dark_red"
-        android:fontFamily="@font/montserrat_regular"
-        android:text="Donor"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab_darah"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:backgroundTint="@color/dark_red"
-        android:src="@drawable/baseline_history_24"
-        app:tint="@android:color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/csr_card_main"
-        />
+        tools:listitem="@layout/item_main" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

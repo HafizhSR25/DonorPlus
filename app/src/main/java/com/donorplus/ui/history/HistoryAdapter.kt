@@ -1,26 +1,21 @@
-package com.donorplus.ui.main
+package com.donorplus.ui.history
 
 import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.donorplus.data.DataDarah
-import com.donorplus.databinding.ItemGoldarBinding
+import com.donorplus.data.DataUsers
 import com.donorplus.databinding.ItemMainBinding
 import com.donorplus.ui.detail.DetailDonorActivity
 
-class GoldarAdapter(private val darah: ArrayList<DataDarah>): RecyclerView.Adapter<GoldarAdapter.ViewHolder>() {
+class HistoryAdapter(private val users: ArrayList<DataUsers>): RecyclerView.Adapter<HistoryAdapter.ViewHolder>() {
+    class ViewHolder (val binding: ItemMainBinding): RecyclerView.ViewHolder(binding.root)
 
-
-    class ViewHolder (val binding: ItemMainBinding):RecyclerView.ViewHolder(binding.root)
-
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder =
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): HistoryAdapter.ViewHolder =
         ViewHolder(ItemMainBinding.inflate(LayoutInflater.from(parent.context),parent, false))
 
-    override fun getItemCount(): Int = darah.size
-
-    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        val currentItem = darah[position]
+    override fun onBindViewHolder(holder: HistoryAdapter.ViewHolder, position: Int){
+        val currentItem = users[position]
         holder.apply {
             binding.apply {
                 tvItemExp.text = "Expired Sebelum ${currentItem.expiredDate}"
@@ -29,7 +24,7 @@ class GoldarAdapter(private val darah: ArrayList<DataDarah>): RecyclerView.Adapt
                 if (currentItem.sts) {
                     tvItemSts.text = "Tersedia"
                 } else {
-                    tvItemSts.text = "Tidak Tersedia"
+                    tvItemSts.text = "Kantong Darah Sedang Kamu Ambil"
                 }
                 itemView.setOnClickListener {
                     val intent = Intent(itemView.context, DetailDonorActivity::class.java)
@@ -38,10 +33,9 @@ class GoldarAdapter(private val darah: ArrayList<DataDarah>): RecyclerView.Adapt
                     }
                     itemView.context.startActivity(intent)
                 }
-
-
-
             }
         }
     }
+
+    override fun getItemCount(): Int = users.size
 }
