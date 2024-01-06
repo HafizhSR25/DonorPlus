@@ -9,13 +9,16 @@ Rahmatul Zamri (23991004)
 
 Job Desc :
 Anggota 1 :
--
+- 
 
 Anggota 2:
 - 
 
 Anggota 3:
--
+- 
 
 Anggota 4: Devalbi Raje Daviar 
--Bagian Registrasi 
+- Bagian Registrasi 
+
+Anggota 5:
+- 
