@@ -17,8 +17,8 @@ Anggota 2: Hafizh Shafar Raharjo
 Anggota 3:
 - 
 
-Anggota 4: 
--  
+Anggota 4: Devalbi Raje Daviar  
+- Membuat Bagian Register
 
 Anggota 5:
 - 
