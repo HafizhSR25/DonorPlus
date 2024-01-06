@@ -1,11 +1,11 @@
 Nama Aplikasi : DonorPlus
 Nama Kelompok : MedicalKit
 Nama Anggota :
-Raden Siliwangi Prabaswara
-Hafizh Shafar Raharjo
-Alviandra Abiyyu Ramdhani
-Devalbi Raje Daviar
-Rahmatul Zamri
+Raden Siliwangi Prabaswara (21523037)
+Hafizh Shafar Raharjo (21523176)
+Alviandra Abiyyu Ramdhani (21523111)
+Devalbi Raje Daviar (23991003)
+Rahmatul Zamri (23991004)
 
 Job Desc :
 Anggota 1 :
