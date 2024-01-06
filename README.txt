@@ -14,8 +14,8 @@ Anggota 1 :
 Anggota 2: Hafizh Shafar Raharjo
 - Membuat Login dan membantu desain figma
 
-Anggota 3:
-- 
+Anggota 3: Alviandra Abiyyu Ramdhani
+- Membuat Profil Pendonor
 
 Anggota 4: Devalbi Raje Daviar  
 - Membuat Bagian Register
