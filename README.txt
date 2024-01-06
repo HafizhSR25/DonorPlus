@@ -9,7 +9,7 @@ Rahmatul Zamri (23991004)
 
 Job Desc :
 Anggota 1 :
-- 
+- Membuat Desain Figma dan Fitur Pengambilan darah
 
 Anggota 2: Hafizh Shafar Raharjo
 - Membuat Login dan membantu desain figma
