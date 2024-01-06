@@ -11,8 +11,8 @@ Job Desc :
 Anggota 1 :
 - 
 
-Anggota 2:
-- 
+Anggota 2: Hafizh Shafar Raharjo
+- Membuat Login dan membantu desain figma
 
 Anggota 3:
 - 
