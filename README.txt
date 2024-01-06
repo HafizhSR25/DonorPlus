@@ -17,5 +17,5 @@ Anggota 2:
 Anggota 3:
 -
 
-Anggota 4:
--
+Anggota 4: Devalbi Raje Daviar 
+-Bagian Registrasi 
